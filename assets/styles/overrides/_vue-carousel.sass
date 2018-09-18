@@ -1,0 +1,56 @@
+$nav-button-size: 3rem
+$nav-button-size-small: 2rem
+
+.VueCarousel
+  .VueCarousel-wrapper
+    overflow: visible !important
+  .VueCarousel-navigation
+    .VueCarousel-navigation-button
+      text-indent: 60000px
+      background-repeat: no-repeat
+      background-size: contain
+      padding: 0 !important
+      margin-right: 0 !important
+      margin-left: 0 !important
+      transform: none !important
+      width: $nav-button-size
+      height: $nav-button-size
+      margin-top: -1 * $nav-button-size/2
+      box-shadow: 0 0 3px 3px rgba($black, 0.2)
+      border-radius: $nav-button-size
+      z-index: 1
+      @media (max-width: $breakpoint-tab-portrait)
+        width: $nav-button-size-small
+        height: $nav-button-size-small
+        margin-top: -1 * $nav-button-size-small/2
+      &.VueCarousel-navigation-prev
+        background-image: url(/assets/images/chevron-left.png)
+        left: $space/8
+        @media (min-width: 1200px)
+          left: 0
+      &.VueCarousel-navigation-next
+        background-image: url(/assets/images/chevron-right.png)
+        right: $space/4
+        @media (min-width: 1200px)
+          right: 0
+          left: auto
+  .VueCarousel-pagination
+    text-align: left !important
+    padding-left: $space*2
+    .VueCarousel-dot-container
+      display: flex
+      align-items: center
+    .VueCarousel-dot
+      margin-top: 0 !important
+      padding: 5px !important
+      display: flex
+      align-items: center
+      &:first-child
+        padding-left: 0 !important
+      button
+        margin-top: 0
+    .VueCarousel-dot.VueCarousel-dot--active
+      button
+        background: $olive-01 !important
+        width: 15px !important
+        height: 15px !important
