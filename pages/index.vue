@@ -1,16 +1,19 @@
 <template lang="pug">
-h1 djams
+  .container
+    contact
 </template>
 
 <script>
+import Contact from '@/components/contact.vue'
 export default {
   components: {
+    Contact
   }
 }
 </script>
 
 <style lang="sass">
-h1
-  color: #F06
+
+
 </style>
 
