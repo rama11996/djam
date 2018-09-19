@@ -1,19 +1,18 @@
 <template lang="pug">
-  .container
-    contact
+.container
+  pricing
 </template>
 
 <script>
-import Contact from '@/components/contact.vue'
+import pricing from '../components/pricing'
 export default {
   components: {
-    Contact
+    pricing
   }
 }
 </script>
 
 <style lang="sass">
-
 
 </style>
 
