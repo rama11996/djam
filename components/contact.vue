@@ -8,27 +8,28 @@
       br
       p Cras erat neque, molestie pharetra urna id, placerat scelerisque urna.  Quisque sed leo felis.
   .contact-form
-    .name
-      .firstname
-        label First Name
+    form(action="https://formcarry.com/s/XXXXXX" method="POST")
+      .name
+        .firstname
+          label First Name
+          span  *
+          input(type="text") 
+        .lastname
+          label Last name
+          span  *
+          input(type="text")
+      .email
+        label E-mail
         span  *
-        input(type="text") 
-      .lastname
-        label Last name
+        input(type="email")
+      .number
+        label Mobile number
         span  *
-        input(type="text")
-    .email
-      label E-mail
-      span  *
-      input(type="email")
-    .number
-      label Mobile number
-      span  *
-      input(type="tel")
-    .textarea 
-      label  Your Message      
-      textarea 
-    button(type="submit") Send Message  
+        input(type="tel")
+      .textarea 
+        label  Your Message      
+        textarea 
+      button.btn(type="submit") Send Message  
   .image  
     img(src="@/assets/images/contact.png")  
 </template>
