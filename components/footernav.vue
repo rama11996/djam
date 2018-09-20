@@ -31,16 +31,7 @@ section
             img(src="../assets/images/insta.png")
           .hostmaker
             img(src="../assets/images/google_.png")
-    .copyrights
-      p.content
-        | © 2018 All Rights Reserved&nbsp;
-      ul.link
-        li
-          a(href="#") maker.com
-        li
-          a(href="#") terms
-        li
-          a(href="#") privacy
+
 
 </template>
 <script>
@@ -83,9 +74,6 @@ section
       text-align: center
       .external
         line-height: 4rem
-        // margin: 8rem 8rem 0px 8rem
-        // padding: 8rem 5rem 0px 8rem
-
         @media(min-width: 1000px)
           @include stack-r
           margin-top: 7rem
@@ -102,30 +90,10 @@ section
             width: 2rem
             height: 2rem
         .hostmaker
+          position: relative
+          top: 10px
           img
             width: 9rem
             
-section
-  .copyrights
-    text-align: center
-    @media (min-width: 1000px)
-      @include flex
-      justify-content: center
-    .content
-    .link
-      @include reset
-      @media (min-width: 1000px)
-        @include flex
-        justify-content: center
-      li
-        margin: 0.5rem
-        @media (min-width: 1000px)
-          &:after
-            content: "\b7"
-            display: inline-block
-            padding: 0.5rem
-        &:last-child
-          &:after
-            content: ""
           
 </style>

@@ -68,6 +68,7 @@ export default {
     padding: 1rem
     @media (min-width: 900px)
       width: 70%
+      @include slideInRight
     input, label
       width: 100%
     .textarea
@@ -87,8 +88,7 @@ export default {
       box-sizing: border-box
      
     button
-      background: #474f62
-      color: white
+      @include theme(white, #474F62)
       border: 1px solid transparent
       margin-top: 1rem
       text-align: center
