@@ -29,7 +29,7 @@ section
 	.summary
 		.head
 			p Get in touch with us for Bespoke services.
-		.btn
+		.btn.btn-primary
 			a SCHEDULE A CALL WITH OUR DSIGNER
 
 
@@ -59,12 +59,14 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
 section
-	margin: 2rem
+	// margin: 3rem 3rem 1rem 3rem
+	padding: 5rem 2rem 2rem 3rem
 	font-family: futura-pt,sans-serif
 	.container
 		opacity: .9
 		font-size: 2rem
 		display: flex	
+		margin-bottom: 3rem
 		font-weight: 100
 		@media(max-width: 1000px)
 			display: block
@@ -91,8 +93,8 @@ section
 			.footerSteps
 				p
 					font-size: 1.2rem
-					font-weight: 500
-					line-height: 2rem
+					font-weight: 300
+					line-height: 3rem
 					text-transform: uppercase
 section
 	.content
@@ -104,6 +106,7 @@ section
 			flex: 4
 			font-weight: 100
 			margin-right: 10%
+			margin-bottom: 4rem
 		.main
 			flex: 7
 			ul
@@ -127,13 +130,13 @@ section
 		.head
 			flex: 4
 			margin-bottom: 2rem
-		.btn
+		.btn.btn-primary
 			flex: 6
 			text-align: center
-			color: #2d2d2d
+			color: #FFF
+			
 			@media(max-width: 1000px)
 				width: 50%
 			a
-				color: #FFF
 			
 </style>
