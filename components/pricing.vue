@@ -62,12 +62,14 @@ section
 	// margin: 3rem 3rem 1rem 3rem
 	padding: 5rem 2rem 2rem 3rem
 	font-family: futura-pt,sans-serif
+	
 	.container
 		opacity: .9
 		font-size: 2rem
 		display: flex	
 		margin-bottom: 3rem
 		font-weight: 100
+		line-height: initial
 		@media(max-width: 1000px)
 			display: block
 		.header
@@ -103,6 +105,7 @@ section
 		@media(max-width: 1000px)
 			display: block
 		.header
+			line-height: initial
 			flex: 4
 			font-weight: 100
 			margin-right: 10%

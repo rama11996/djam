@@ -23,6 +23,7 @@ export default {
     footernav,
     textcarrosel,
     imagecarrosel
+    footernav
   }
 }
 </script>
