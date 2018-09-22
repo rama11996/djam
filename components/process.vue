@@ -48,7 +48,7 @@ export default {
       padding-bottom: 400px
     ul  
       li
-        padding: 1rem
+        align-items: center
         display: flex    
       img
         width: 2rem

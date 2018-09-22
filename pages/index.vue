@@ -1,6 +1,8 @@
 <template lang="pug">
 .container
   process
+  textcarrosel
+  //- imagecarrosel
   pricing
   contact
   footernav
@@ -9,20 +11,18 @@
 <script>
 import pricing from '../components/pricing'
 import contact from '../components/contact'
-<<<<<<< HEAD
 import process from '../components/process'
-=======
 import footernav from '../components/footernav'
->>>>>>> Added footer component
+import textcarrosel from '../components/textcarrosel'
+// import imagecarrosel from '../components/imagecarrosel'
 export default {
   components: {
     pricing,
     contact,
-<<<<<<< HEAD
-    process
-=======
-    footernav
->>>>>>> Added footer component
+    process,
+    footernav,
+    textcarrosel,
+    imagecarrosel
   }
 }
 </script>
