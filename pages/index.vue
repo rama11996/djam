@@ -25,14 +25,12 @@ export default {
     process,
     footernav,
     textcarrosel,
-    imagecarrosel,
     footernav,
     navigation
   }
 }
 </script>
 
-<style lang="sass">
-
+<style lang="
 </style>
 
