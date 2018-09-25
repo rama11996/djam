@@ -24,6 +24,7 @@ export default {
     contact,
     process,
     footernav,
+    imagecarrosel,
     textcarrosel,
     footernav,
     navigation

@@ -5,7 +5,8 @@
   ul.slides
     li(v-for="(img,i) in images", :class="{active: i === current}")
       img(:src="img.pic")
-      h3 {{ img.name }}
+      .content
+        h3 {{ img.name }}
   .pagination
     button.prev(@click="prev()") <
     button.next(@click="next()") >     
@@ -40,18 +41,39 @@ export default {
   margin: 2rem
   ul
     li
-      background-repeat: no-repeat
+      position: relative
+      max-width: 600px
       list-style: none
       display: none
-      margin-left: auto
-      margin-right: auto
-     
+      margin: 0 auto
       &.active
         display: block
-      img  
-        height: 360px
-      h3
-        color: green 
-  .pagination
-    align-content: center        
+      img   
+        width: 600px
+      .content
+        position: absolute
+        bottom: 0
+        height: 0
+        background: rgb(0, 0, 0)
+        background: #fff
+        width: 100%
+        padding: 5px
+        transition: .1s ease
+        overflow: hidden
+      &:hover
+        .content  
+          height: 20%
+  .pagination 
+    display: flex
+    margin: 0 auto
+    width: 100%
+    justify-content: space-around
+    z-index: 1
+    .prev, .next
+      padding: 20px
+      border-radius: 3rem 
+      // background: none
+      color:grey
+      // font-size: 2.5rem
+      cursor: pointer          
 </style>
