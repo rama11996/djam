@@ -39,6 +39,7 @@ export default {
 $space: 3rem
 .textcarrosel
   display: flex
+  margin: 2rem
   .slides
     list-style: none
     li 
