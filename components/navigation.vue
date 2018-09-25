@@ -1,17 +1,15 @@
 <template lang="pug">
 section
   .container
-    
     .menu(:class="{open: open}" )
       .mask(@click="toggle()")
-      .nav(:class="{open: open}" )
-        .menu-item
-          ul 
-            li(v-for="item in menuItems") {{ item }}
+      ul.nav(:class="{open: open}" )     
+          li(v-for="item in menuItems")
+            a(href="") {{ item }}
     .hamburger(@click="toggle()", :class="{open: open}" )
       img(src="../assets/images/hamburger.png")
 </template>
-<script>
+<script>         
 export default {
   data(){
     return{
@@ -29,51 +27,65 @@ export default {
 </script>
 <style lang="sass" scoped>
 @import 'assets/styles/includes'
-section
-  position: fixed
-  z-index: 105
-  .container
-    @media (max-width: 1000px)
-      display: flex
-      float: right
-    .hamburger
-      display: none
-      @media (max-width: 1000px)
-        display: block
-        height: $space*2
-        position: fixed
-        right: 2rem
-        z-index: 105
-section
-  .menu
-    @media (max-width: 1000px)
-      position: fixed
-      right: 2rem
-      z-index: 105  
-      margin-top: 3rem
-      line-height: $space*3
-      font-size: $space*2 
-      ul
-        @include reset
 
-      .nav
-        visibility: hidden
-        &.open
-          visibility: visible
+@mixin full-screen
+  position: fixed
+  right: 0
+  top: 0
+  bottom: 0
+  left: 0
+
 section
-  .menu-item
-    @media ( min-width:1001px)
-      position: fixed
-      top: 25rem
-      right: 2rem
-      z-index: 105  
-      transform: translateX(12rem) translateY(-3rem) rotate(90deg)
-    ul
-      @media ( min-width:1001px)
+  background-color: #FFF
+  @include fixed-e
+  z-index: 105
+  width: 9rem
+  @media (max-width: 1000px)
+    width: 12rem
+  .container
+    @media(max-width: 1000px)
+      display: flex
+    .menu
+      .nav
         @include reset
-        padding: 0
+        position: fixed
+        top: 25rem
+        right: 0rem     
+        transform: translateX(12rem) translateY(-3rem) rotate(90deg)
         display: flex
-      li
-        margin-right: $space
+        // visibility: hidden
+        // &.open
+        //   visibility: visible
+        @media (max-width:1000px)
+          transform : none 
+          display: block
+          top: 7rem
+          right: 2rem
+          position: none
+          visibility: hidden
+          &.open
+            visibility: visible
+        li 
+          a
+            margin-right: $space
+            @media(max-width:1000px)
+              font-size: 1.525rem
+              line-height: 3rem
+section
+  .container
+    .menu
+      .mask
+        @mixin full-screen
+        z-index: 104
+
+section
+  .hamburger
+    display: none
+    @media (max-width: 1000px)
+      display: block
+      height: 2.5rem
+      position: fixed
+      right: 1rem
+
 
 </style>
