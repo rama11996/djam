@@ -3,6 +3,7 @@
   navigation
   process
   textcarrosel
+  imagecarrosel
   pricing
   contact
   footernav
@@ -14,8 +15,8 @@ import contact from '../components/contact'
 import process from '../components/process'
 import footernav from '../components/footernav'
 import textcarrosel from '../components/textcarrosel'
+import imagecarrosel from '../components/imagecarrosel'
 import navigation from '../components/navigation'
-
 
 export default {
   components: {
