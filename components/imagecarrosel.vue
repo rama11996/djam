@@ -42,14 +42,14 @@ export default {
   ul
     li
       position: relative
-      max-width: 600px
+      max-width: 500px
       list-style: none
       display: none
       margin: 0 auto
       &.active
         display: block
       img   
-        width: 600px
+        width: 700px
       .content
         position: absolute
         bottom: 0
@@ -62,13 +62,12 @@ export default {
         overflow: hidden
       &:hover
         .content  
-          height: 20%
+          height: 30%
   .pagination 
     display: flex
     margin: 0 auto
     width: 100%
     justify-content: space-around
-    z-index: 1
     .prev, .next
       padding: 20px
       border-radius: 3rem 

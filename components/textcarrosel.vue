@@ -47,12 +47,17 @@ $space: 3rem
       visibility: hidden
       &.active
         visibility: visible  
-  .pagination  
-    .prev, .next
-      padding: 20px
-      border-radius: 2rem 
-      font-size: 1.5rem
-      cursor: pointer    
+    .pagination
+      top: 15rem 
+      display: flex
+      // margin: 0 auto
+      // width: 100%
+      justify-content: space-around 
+      .prev, .next
+        padding: 20px
+        border-radius: 2rem 
+        font-size: 1.5rem
+        cursor: pointer    
   .image
     width: 300px
     height: 300px
