@@ -8,7 +8,7 @@
       br
       p Cras erat neque, molestie pharetra urna id, placerat scelerisque urna.  Quisque sed leo felis.
   .contact-form
-    form(method="POST" @submit="checkForm()")
+    form(method="POST" @submit="checkForm()" action="https://formcarry.com/s/2G5WL90Hjj5")
       .name
         .firstname
           label First Name
