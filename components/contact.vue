@@ -8,24 +8,24 @@
       br
       p Cras erat neque, molestie pharetra urna id, placerat scelerisque urna.  Quisque sed leo felis.
   .contact-form
-    form(action="https://formcarry.com/s/XXXXXX" method="POST")
+    form(method="POST" @submit="checkForm()")
       .name
         .firstname
           label First Name
           span  *
-          input(type="text") 
+          input(type="text" name="fname", v-model="fname") 
         .lastname
           label Last name
           span  *
-          input(type="text")
+          input(type="text" name="lname" v-model="lname")
       .email
         label E-mail
         span  *
-        input(type="email")
+        input(type="email" name="email" v-model="email")
       .number
         label Mobile number
         span  *
-        input(type="tel")
+        input(type="tel" name="number" v-model="number")
       .textarea 
         label  Your Message      
         textarea 
@@ -35,7 +35,36 @@
 </template>
 <script>
 export default {
-  
+  data () {
+    return {
+      fname: "",
+      lname: "",
+      email: "",
+      number: ""
+    }
+  },
+  methods: {
+    checkForm() {
+      if(this.fname == "") {
+        alert("First Name required")
+      }
+      if(this.lname == "") {
+        alert("Last Name required")
+      }
+      if(this.email == "") {
+        alert("Email required")
+      }
+      if(this.number == "") {
+        alert("Number required")
+      }
+      else {
+        console.log(this.fname)
+        console.log(this.lname)
+        console.log(this.email)
+        console.log(this.number)
+      } 
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

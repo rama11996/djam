@@ -1,6 +1,6 @@
 <template lang="pug">
 .container
-  //- navigation
+  navigation
   process
   textcarrosel
   imagecarrosel

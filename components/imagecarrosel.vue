@@ -58,7 +58,7 @@ export default {
         background: #fff
         width: 100%
         padding: 5px
-        transition: .1s ease
+        transition: .5 s ease
         overflow: hidden
       &:hover
         .content  
